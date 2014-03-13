@@ -3,7 +3,7 @@
 ; ***    To download user-contributed translations of this file, go to:        ***
 ; ***    http://www.jrsoftware.org/files/istrans/                              ***
 ; ***                                                                          ***
-; ***    Author: Jackmoo (enepgoo@gmail.com)                                   ***
+; ***    Author: Jackmoo (enepgoo@gmail.com)           **                      ***
 ; ***                                                                          ***        
 ; ***                                                                          ***
 ; ***                                                                          ***  
