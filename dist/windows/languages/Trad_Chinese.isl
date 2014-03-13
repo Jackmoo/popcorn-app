@@ -1,19 +1,30 @@
-; *** Inno Setup version 5.5.3+ English messages ***
-;
-; To download user-contributed translations of this file, go to:
-;   http://www.jrsoftware.org/files/istrans/
-;
-; Note: When translating this text, do not add periods (.) to the end of
-; messages that didn't have them already, because on those messages Inno
-; Setup adds the periods automatically (appending a period would result in
-; two periods being displayed).
+; ************ Inno Setup version 5.5.3+ Traditional Chinese messages ************
+; ***                                                                          ***
+; ***    To download user-contributed translations of this file, go to:        ***
+; ***    http://www.jrsoftware.org/files/istrans/                              ***
+; ***                                                                          ***
+; ***    Author: Jackmoo (enepgoo@gmail.com)                                   ***
+; ***                                                                          ***        
+; ***    **UNDER TESTING SINCE CHINESE IS DOUBLE BYTE CHARACTER**              ***
+; ***                                                                          ***  
+; *** Note: When translating this text, do not add periods (.) to the end of   ***
+; *** messages that didn't have them already, because on those messages Inno   ***
+; *** Setup adds the periods automatically (appending a period would result in ***
+; *** two periods being displayed).                                            ***
+; ********************************************************************************
+
+
 
 [LangOptions]
 ; The following three entries are very important. Be sure to read and 
 ; understand the '[LangOptions] section' topic in the help file.
-LanguageName=English
-LanguageID=$0409
-LanguageCodePage=0
+LanguageName=Traditional Chinese
+LanguageID=$7C04
+
+; *Not test yet
+LanguageCodePage=950
+; ****
+
 ; If the language you are translating to requires special font faces or
 ; sizes, uncomment any of the following entries and change them accordingly.
 ;DialogFontName=
@@ -28,47 +39,47 @@ LanguageCodePage=0
 [Messages]
 
 ; *** Application titles
-SetupAppTitle=Setup
-SetupWindowTitle=Setup - %1
-UninstallAppTitle=Uninstall
-UninstallAppFullTitle=%1 Uninstall
+SetupAppTitle=安裝
+SetupWindowTitle=安裝 - %1
+UninstallAppTitle=解除安裝
+UninstallAppFullTitle=%1 解除安裝
 
 ; *** Misc. common
-InformationTitle=Information
-ConfirmTitle=Confirm
-ErrorTitle=Error
+InformationTitle=資訊
+ConfirmTitle=確認
+ErrorTitle=錯誤
 
 ; *** SetupLdr messages
-SetupLdrStartupMessage=This will install %1. Do you wish to continue?
-LdrCannotCreateTemp=Unable to create a temporary file. Setup aborted
-LdrCannotExecTemp=Unable to execute file in the temporary directory. Setup aborted
+SetupLdrStartupMessage=將安裝%1. 您是否要繼續?
+LdrCannotCreateTemp=無法建立暫存檔案. 安裝中止
+LdrCannotExecTemp=無法啟動暫存資料夾中的檔案. 安裝中止
 
 ; *** Startup error messages
 LastErrorMessage=%1.%n%nError %2: %3
-SetupFileMissing=The file %1 is missing from the installation directory. Please correct the problem or obtain a new copy of the program.
-SetupFileCorrupt=The setup files are corrupted. Please obtain a new copy of the program.
-SetupFileCorruptOrWrongVer=The setup files are corrupted, or are incompatible with this version of Setup. Please correct the problem or obtain a new copy of the program.
-InvalidParameter=An invalid parameter was passed on the command line:%n%n%1
-SetupAlreadyRunning=Setup is already running.
-WindowsVersionNotSupported=This program does not support the version of Windows your computer is running.
-WindowsServicePackRequired=This program requires %1 Service Pack %2 or later.
-NotOnThisPlatform=This program will not run on %1.
-OnlyOnThisPlatform=This program must be run on %1.
-OnlyOnTheseArchitectures=This program can only be installed on versions of Windows designed for the following processor architectures:%n%n%1
-MissingWOW64APIs=The version of Windows you are running does not include functionality required by Setup to perform a 64-bit installation. To correct this problem, please install Service Pack %1.
-WinVersionTooLowError=This program requires %1 version %2 or later.
-WinVersionTooHighError=This program cannot be installed on %1 version %2 or later.
-AdminPrivilegesRequired=You must be logged in as an administrator when installing this program.
-PowerUserPrivilegesRequired=You must be logged in as an administrator or as a member of the Power Users group when installing this program.
-SetupAppRunningError=Setup has detected that %1 is currently running.%n%nPlease close all instances of it now, then click OK to continue, or Cancel to exit.
-UninstallAppRunningError=Uninstall has detected that %1 is currently running.%n%nPlease close all instances of it now, then click OK to continue, or Cancel to exit.
+SetupFileMissing=缺失安裝資料夾中的檔案: %1 請修正或重新下載本程式
+SetupFileCorrupt=安裝檔案損毀. 請重新下載本程式
+SetupFileCorruptOrWrongVer=安裝檔案損毀或不相容於本安裝程式 請修正或重新下載本程式
+InvalidParameter=此參數在命令行不合法:%n%n%1
+SetupAlreadyRunning=安裝程式已經在執行
+WindowsVersionNotSupported=本程式並不支援您的Windows版本
+WindowsServicePackRequired=本程式需要 %1 Service Pack %2 或更新的版本
+NotOnThisPlatform=本程式無法在 %1 上執行
+OnlyOnThisPlatform=本程式必須在 %1 上才能執行
+OnlyOnTheseArchitectures=本程式僅能安裝於使用%n%n%1架構的Windows上
+MissingWOW64APIs=您的Windows沒有安裝64位元程式的功能 請安裝 Service Pack %1.
+WinVersionTooLowError=本程式需要 %1 %2 版或更新的版本
+WinVersionTooHighError=本程式無法安裝於 %1 %2 版或更新的版本
+AdminPrivilegesRequired=您必須以管理員(administrator)身分登入才能安裝此程式
+PowerUserPrivilegesRequired=您必須以管理員(administrator)身分登入或是Power Users的成員才能安裝此程式
+SetupAppRunningError=安裝程式已偵測到 %1 正在執行 %n%n請關閉所有該程式, 然後按'OK'來繼續安裝, 或按'取消'來取消安裝
+UninstallAppRunningError=解除安裝程式已偵測到 %1 正在執行 %n%n請關閉所有該程式, 然後按'OK'來繼續安裝, 或按'取消'來取消安裝
 
 ; *** Misc. errors
-ErrorCreatingDir=Setup was unable to create the directory "%1"
-ErrorTooManyFilesInDir=Unable to create a file in the directory "%1" because it contains too many files
+ErrorCreatingDir=安裝程式無法建立"%1"資料夾
+ErrorTooManyFilesInDir=資料夾"%1"檔案太多, 已無法建立檔案
 
 ; *** Setup common messages
-ExitSetupTitle=Exit Setup
+ExitSetupTitle=離開安裝程式
 ExitSetupMessage=Setup is not complete. If you exit now, the program will not be installed.%n%nYou may run Setup again at another time to complete the installation.%n%nExit Setup?
 AboutSetupMenuItem=&About Setup...
 AboutSetupTitle=About Setup
